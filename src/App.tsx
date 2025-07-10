@@ -1,7 +1,6 @@
 import { Button, buttonSizeProps, buttonVariantProps } from '@brandonfajardo/button'
 
 function App() {
-
   const toggle = () => {
     document.body.classList.toggle('dark');
     if (document.body.style.backgroundColor === 'black') {
