@@ -1,18 +1,16 @@
 @import "tailwindcss";
+/* https://tailwindcss.com/docs/detecting-classes-in-source-files#explicitly-registering-sources */
+/* This is especially useful when you need to scan an external library that is built with Tailwind, since dependencies are usually listed in your .gitignore file and ignored by Tailwind by default. */
+@source "../node_modules/@brandonfajardo/button";
 @custom-variant dark (&:where(.dark, .dark *));
 
 
 /* === Radius Tokens === */
 :root {
-  --radius-lg: 0.0625rem;
-  --radius-lgx: 0.0625rem;
-  --radius-xl: 0.125rem;
-  --radius-2xl: 0.125rem;
-  --radius-3xl: 0.1875rem;
-  --radius-4xl: 0.25rem;
+  --radius-lgx: 0.625rem;
   --radius-full: 1000.0rem;
-  --radius-action-1: 0.1999rem;
-  --radius-action-2: 0.0rem;
+  --radius-action-1: 1000.0rem;
+  --radius-action-2: 0.5rem;
 }
 
 /* === Color Tokens === */

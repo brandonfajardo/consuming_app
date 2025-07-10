@@ -1,9 +1,6 @@
-import { useState } from 'react'
-
 import { Button, buttonSizeProps, buttonVariantProps } from '@brandonfajardo/button'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   const toggle = () => {
     document.body.classList.toggle('dark');
